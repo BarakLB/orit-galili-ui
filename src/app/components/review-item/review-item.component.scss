@@ -1,0 +1,22 @@
+@import "../../../globals.scss";
+:host {
+  display: flex;
+  background-color: $white;
+  max-width: 320px;
+  min-height: 220px;
+  max-height: 220px;
+  .img-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
