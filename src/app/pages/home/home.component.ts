@@ -11,11 +11,12 @@ import { isPlatformBrowser } from '@angular/common';
 import { HeroComponent } from '../../components/hero/hero.component';
 import { ReviewsComponent } from '../../components/reviews/reviews.component';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { StudioSummaryComponent } from '../../components/studio-summary/studio-summary.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, HeroComponent, ReviewsComponent, FooterComponent],
+  imports: [HeaderComponent, HeroComponent, ReviewsComponent, FooterComponent, StudioSummaryComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
