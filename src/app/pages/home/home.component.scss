@@ -10,9 +10,11 @@
     height: 1px;
   }
   main {
-    margin: 800px 16px 0;
+    width: 100%;
+    display: block;
+    margin: 24px 16px 0;
     app-reviews {
-      margin-top: 24px;
+      margin: 0 0 24px;
     }
   }
 }
@@ -20,7 +22,7 @@
 @media screen and (min-width: $tablet) {
   :host {
     main {
-      margin: 800px 24px 0;
+      margin: 24px 24px 0;
     }
   }
 }
@@ -28,7 +30,7 @@
   :host {
     main {
       max-width: 1080px;
-      margin: 800px auto 0;
+      margin: 24px auto 0;
     }
   }
 }
