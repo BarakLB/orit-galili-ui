@@ -1,15 +1,23 @@
-import { AfterViewInit, Component, ElementRef, Inject, OnDestroy, PLATFORM_ID } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  Inject,
+  OnDestroy,
+  PLATFORM_ID,
+} from '@angular/core';
 import { HeaderComponent } from '../../components/header/header.component';
 import { isPlatformBrowser } from '@angular/common';
 import { HeroComponent } from '../../components/hero/hero.component';
 import { ReviewsComponent } from '../../components/reviews/reviews.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, HeroComponent, ReviewsComponent],
+  imports: [HeaderComponent, HeroComponent, ReviewsComponent, FooterComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
 })
 export class HomeComponent implements AfterViewInit, OnDestroy {
   observer!: IntersectionObserver;
@@ -21,14 +29,15 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
     if (isPlatformBrowser(this.platformId)) {
       const scrollAnchor =
         this.homeCmp.nativeElement.querySelector('.scroll-anchor');
-        const header = this.homeCmp.nativeElement.querySelector('app-header');
+      const header = document.querySelector('app-header');
       this.observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
+            console.log(entry.isIntersecting);
             if (entry.isIntersecting) {
-              header.nativeElement.classList.remove('scrolled');
+              header?.classList.remove('scrolled');
             } else {
-              header.nativeElement.classList.add('scrolled');
+              header?.classList.add('scrolled');
             }
           });
         },

@@ -1,3 +1,6 @@
-@for (review of reviews; track review.from){
-<app-review-item [review]="review"></app-review-item>
-}
+<h3>לקוחות כותבים</h3>
+<section>
+    @for (review of reviews; track review.from){
+        <app-review-item [review]="review"></app-review-item>
+    }
+</section>

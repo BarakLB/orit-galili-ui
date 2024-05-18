@@ -2,7 +2,6 @@
 :host {
   display: block;
   background-color: #e7e7e7;
-  padding-top: 72px;
 
   .scroll-anchor {
     position: absolute;
@@ -11,14 +10,17 @@
     height: 1px;
   }
   main {
-    margin: 0 16px;
+    margin: 800px 16px 0;
+    app-reviews {
+      margin-top: 24px;
+    }
   }
 }
 
 @media screen and (min-width: $tablet) {
   :host {
     main {
-      margin: 0 24px;
+      margin: 800px 24px 0;
     }
   }
 }
@@ -26,7 +28,7 @@
   :host {
     main {
       max-width: 1080px;
-      margin: 0 auto;
+      margin: 800px auto 0;
     }
   }
 }

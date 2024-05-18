@@ -10,4 +10,8 @@ import { ReviewItem } from '../../models/review-item.interface';
 })
 export class ReviewItemComponent {
   @Input() review!: ReviewItem;
+
+  routeToFacebookReview(): void {
+    window.open('https://www.facebook.com/oritgalili8/reviews/', "_blank");
+  }
 }
