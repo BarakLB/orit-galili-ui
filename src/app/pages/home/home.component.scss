@@ -1,0 +1,34 @@
+@import "../../../globals.scss";
+:host {
+  display: block;
+  background-color: #e7e7e7;
+
+  .scroll-anchor {
+    position: absolute;
+    top: 72px;
+    width: 100%;
+    height: 1px;
+  }
+  main {
+    margin: 800px 16px 0;
+    app-reviews {
+      margin-top: 24px;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  :host {
+    main {
+      margin: 800px 24px 0;
+    }
+  }
+}
+@media screen and (min-width: $desktop) {
+  :host {
+    main {
+      max-width: 1080px;
+      margin: 800px auto 0;
+    }
+  }
+}

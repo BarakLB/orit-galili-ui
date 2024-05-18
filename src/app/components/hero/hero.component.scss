@@ -1,0 +1,57 @@
+@import "../../../globals.scss";
+:host {
+  display: flex;
+  width: 100%;
+  //   position: relative;
+  .image-wrapper {
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+  }
+
+  .brand-logo {
+    // position: relative;
+    .square {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 200px;
+      width: 200px;
+      border: 5px solid $white;
+
+      p {
+        color: $white;
+        font-size: 120px;
+        &.o {
+          z-index: 1;
+          position: absolute;
+          top: -15px;
+          left: 5px;
+        }
+
+        &.g {
+          z-index: 2;
+          position: absolute;
+          top: 30px;
+          left: 33px;
+        }
+      }
+
+      span {
+        position: absolute;
+        bottom: -27px;
+        left: 0;
+        color: $white;
+        white-space: nowrap;
+      }
+    }
+  }
+}
