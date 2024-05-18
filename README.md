@@ -11,10 +11,8 @@ Welcome to the Architecture and Interior Design Website project! This is an Angu
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Running the Application](#running-the-application)
-- [Folder Structure](#folder-structure)
-- [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
+- [Folder Structure](#folder-structure)
 
 ## Introduction
 
@@ -51,3 +49,77 @@ Make sure you have the following tools installed on your machine:
    ```sh
    git clone https://github.com/your-username/architecture-interior-design-website.git
    cd architecture-interior-design-website
+
+   ```
+
+2. **Install dependencies:**
+
+   ```sh
+   npm install
+
+   ```
+
+### Running the Application
+
+1. **Start the development server:**
+
+   ```sh
+   ng serve
+
+   ```
+
+2. **Open your browser and navigate to:**
+
+   ```sh
+   http://localhost:4200
+   ```
+
+## Contributing
+
+1. **Fork the repository.**
+
+2. **Create a new branch:**
+
+   ```sh
+   git checkout -b feature/your-feature-name
+
+   ```
+
+3. **Make your changes and commit them:**
+
+   ```sh
+   git commit -m "Add new feature"
+
+   ```
+
+4. **Push to the branch:**
+
+   ```sh
+   git push origin feature/your-feature-name
+
+   ```
+
+5. **Create a pull request.**
+
+## Folder Structure
+
+    ```sh
+    architecture-interior-design-website/
+    ├── e2e/                     # End-to-end tests
+    ├── src/                     # Source files
+    │   ├── app/                 # Angular components, services, modules
+    │   ├── assets/              # Images, fonts, and other assets
+    │   ├── environments/        # Environment settings
+    │   ├── styles/              # Global styles
+    │   ├── index.html           # Main HTML file
+    │   ├── main.ts              # Main entry point
+    │   ├── polyfills.ts         # Polyfills for older browsers
+    │   └── styles.scss          # Global SCSS file
+    ├── .editorconfig            # Editor configuration
+    ├── .gitignore               # Git ignore file
+    ├── angular.json             # Angular CLI configuration
+    ├── package.json             # NPM dependencies and scripts
+    ├── README.md                # Project README file
+    ├── tsconfig.app.json        # TypeScript configuration
+    ├── tsconfig.json            # TypeScript configuration
+    └── tslint.json              # TSLint configuration
