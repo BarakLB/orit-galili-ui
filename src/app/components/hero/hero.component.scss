@@ -2,7 +2,9 @@
 :host {
   display: flex;
   width: 100%;
-  //   position: relative;
+  height: 800px;
+    position: relative;
+    z-index: 1;
   .image-wrapper {
     z-index: -1;
     top: 0;
@@ -16,42 +18,5 @@
     object-fit: cover;
   }
 
-  .brand-logo {
-    // position: relative;
-    .square {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      height: 200px;
-      width: 200px;
-      border: 5px solid $white;
-
-      p {
-        color: $white;
-        font-size: 120px;
-        &.o {
-          z-index: 1;
-          position: absolute;
-          top: -15px;
-          left: 5px;
-        }
-
-        &.g {
-          z-index: 2;
-          position: absolute;
-          top: 30px;
-          left: 33px;
-        }
-      }
-
-      span {
-        position: absolute;
-        bottom: -27px;
-        left: 0;
-        color: $white;
-        white-space: nowrap;
-      }
-    }
-  }
+ 
 }
